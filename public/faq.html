@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Header start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-10 lg:pl-20">
+            <a href="#faq">
+              <img
+                id="logo"
+                class="logo-link w-20 md:w-28 lg:block lg:w-full"
+                src="./img/Logo fix.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="flex items-center px-4 py-10">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-10 ham-link lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[150px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:pr-20 lg:shadow-none lg:rounded-none"
+            >
+              <ul class="font-philosopher block font-bold lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="about.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="menu.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Menu</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="gallery.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero section start-->
+    <section
+      id="home"
+      class="py-36 bg-[url('./img/header-kecil.jpg')] bg-center bg-cover flex items-center justify-center"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center text-center">
+            <h1
+              class="font-philosopher text-2xl text-white md:text-4xl lg:text-5xl"
+            >
+              FAQs
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- FAQs section start -->
+    <section 
+    id="faq"
+    class="py-20 lg:py-36">
+        <div class="container">
+            <div id="accordion" class="w-full px-10 lg:px-32">
+                <!-- FAQ Item 1 -->
+                <div class="border rounded-md">
+                    <button class="w-full py-5 px-6 text-left text-base font-philosopher font-semibold focus:outline-none md:text-xl lg:text-2xl">
+                        What are your best-selling foods and drinks at Pi7u Bali Restaurant?
+                    </button>
+                    <div class="hidden w-full px-6 pb-3 font-port-lligat-sans text-justify text-sm md:text-base lg:text-xl">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tempora quos illo illum. Adipisci architecto hic aut beatae doloribus ea quasi perferendis, perspiciatis accusantium fugiat, earum laudantium tempore reprehenderit atque.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border rounded-md">
+                    <button class="w-full py-5 px-6 text-left text-base font-philosopher font-semibold focus:outline-none  md:text-xl lg:text-2xl">
+                        Does Pi7u Bali Restaurant have a special food or drink menu that specializes in certain regions or cultures that can be recommended?
+                    </button>
+                    <div class="hidden w-full px-6 pb-3 font-port-lligat-sans text-justify text-sm md:text-base lg:text-xl">
+                        You can install Tailwind CSS using npm or yarn by following the official documentation.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border rounded-md">
+                    <button class="w-full py-5 px-6 text-left text-base font-philosopher font-semibold focus:outline-none  md:text-xl lg:text-2xl">
+                        Does Pi7u Bali restaurant accept table reservations and catering orders?
+                    </button>
+                    <div class="hidden w-full px-4 pb-3 font-port-lligat-sans text-justify text-sm md:text-base lg:text-xl">
+                        Yes, Tailwind CSS is designed to be responsive and mobile-first by default.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border rounded-md">
+                    <button class="w-full py-5 px-6 text-left text-base font-philosopher font-semibold focus:outline-none  md:text-xl lg:text-2xl">
+                        Does Pi7u Bali This restaurant provide delivery or take-away services?
+                    </button>
+                    <div class="hidden w-full px-6 pb-3 font-port-lligat-sans text-justify text-sm md:text-base lg:text-xl">
+                        Yes, Tailwind CSS is designed to be responsive and mobile-first by default.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border rounded-md">
+                    <button class="w-full py-5 px-6 text-left text-base font-philosopher font-semibold focus:outline-none  md:text-xl lg:text-2xl">
+                        Are there any special events or promotions that are often held at Pi7u Bali Restaurant?
+                    </button>
+                    <div class="hidden w-full px-6 pb-3 font-port-lligat-sans text-justify text-sm md:text-base lg:text-xl">
+                        Yes, Tailwind CSS is designed to be responsive and mobile-first by default.
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <!-- FAQs section end -->
+    
+    <!-- Footer start -->
+    <footer id="footer" class="w-full bg-primary absolute md:pr-10 lg:pl-32 lg:pr-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full my-auto px-10 text-white md:w-1/2">
+                    <div class="pt-20 pb-5 mx-auto">
+                        <h1
+                        class="font-philosopher font-bold text-3xl lg:text-4xl"
+                        >
+                        Talk with us
+                        </h1>
+                    </div>
+                    <div class="font-port-lligat-sans text-base md:text-lg lg:text-xl">
+                        <p class="mb-2">
+                            Jln. Samratulangi No. 14, Singaraja, Buleleng, Bali
+                        </p>
+                        <p class="mb-2">
+                            (+62) 81138700044
+                        </p>
+                        <p class="mb-2 md:pb-20">
+                            Pi7uBali@gmail.com 
+                        </p>
+                    </div>  
+                </div>
+                <div class="w-full my-auto px-10 text-white md:pl-24 lg:pl-20 md:w-1/2">
+                    <div class="pt-14 pb-5 mx-auto md:pt-16">
+                        <h1
+                        class="font-philosopher font-bold text-3xl lg:text-4xl"
+                        >
+                        Keep Connected
+                        </h1> 
+                    </div>
+                    <ul class="font-port-lligat-sans pb-20">
+                        <li class="flex items-center mb-4">
+                            <img src="./img/Vector-IG.png" alt="Instagram Logo" class="w-6 h-6 mr-2">
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="flex items-center mb-4">
+                            <img src="./img/Vector-FB.png" alt="Facebook Logo" class="w-6 h-6 mr-2">
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="flex items-center mb-4">
+                            <img src="./img/Vector-TWT.png" alt="Twitter Logo" class="w-6 h-6 mr-2">
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
+
