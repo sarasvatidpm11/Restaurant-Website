@@ -46,12 +46,18 @@ window.onscroll = function () {
     navMenu.classList.toggle("hidden");
   });
 
+  //Accordion
+  const accordionHeader = document.querySelectorAll('.accodion-header')
 
-  const faqItems = document.querySelectorAll('#accordion .border');
-
-  faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('border-gray-500');
-      item.querySelector('div').classList.toggle('hidden');
-    });
-  });
+  accordionHeader.forEach(accordionHeader => {
+    accordionHeader.addEventListener("click", event => {
+      accordionHeader.classList.toggle("active")
+      const accodionBody = accordionHeader.nextElementSibling
+      if(accordionHeader.classList.contains("active")) {
+        accodionBody.style.maxHeight = accodionBody.scrollHeight + "px"
+      }
+      else {
+        accodionBody.style.maxHeight = 0
+      }
+    })
+  })

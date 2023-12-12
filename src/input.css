@@ -27,3 +27,15 @@
     @apply -rotate-45;
 }
 
+@layer components {
+  .accordion-header {
+    @apply py-4 px-6 cursor-pointer
+  }
+  .accordion-header.active i {
+    @apply transition ease-in-out duration-300;
+    transform: rotate(180deg)
+  }
+  .accordion-body {
+    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
+  }
+}
