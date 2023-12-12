@@ -37,6 +37,21 @@ window.onscroll = function () {
     }
   };
   
+  // Rubah warna sub menu navbar
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var currentPage = window.location.pathname;
+  //   var navLinks = document.querySelectorAll(".nav-link");
+  
+  //   navLinks.forEach(function (link) {
+  //     var linkHref = link.getAttribute("href");
+  //     currentPage = currentPage.replace(/\/$/, "");
+  
+  //     if (linkHref === currentPage) {
+  //       link.closest("a").classList.add("active");
+  //     }
+  //   });
+  // });
+
   // Hamburger
   const hamburger = document.querySelector("#hamburger");
   const navMenu = document.querySelector("#nav-menu");
@@ -47,17 +62,34 @@ window.onscroll = function () {
   });
 
   //Accordion
-  const accordionHeader = document.querySelectorAll('.accodion-header')
+  const accordionHeader = document.querySelectorAll('.accordion-header');
 
   accordionHeader.forEach(accordionHeader => {
     accordionHeader.addEventListener("click", event => {
       accordionHeader.classList.toggle("active")
-      const accodionBody = accordionHeader.nextElementSibling
+      const accordionBody = accordionHeader.nextElementSibling
       if(accordionHeader.classList.contains("active")) {
-        accodionBody.style.maxHeight = accodionBody.scrollHeight + "px"
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + "px"
       }
       else {
-        accodionBody.style.maxHeight = 0
+        accordionBody.style.maxHeight = 0
       }
     })
   })
+
+
+  //Gallery
+  document.querySelectorAll('.image-container-gallery img').forEach(image =>{
+    image.onclick = () =>{
+      document.querySelector('.popup-image-gallery').style.display = 'block';
+      document.querySelector('.popup-image-gallery img').src = image.getAttribute('src');
+    }
+  });
+
+  document.querySelector('.popup-image-gallery span').onclick = () =>{
+    document.querySelector('.popup-image-gallery').style.display = 'none';
+  }
+
+  
+  
+  
