@@ -1,150 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="custom.css" />
 </head>
 <body>
-    <!-- Header start -->
-    <header
-    class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-      >
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-10 lg:pl-20">
-                <a href="#faq">
-                    <img
-                    id="logo"
-                    class="logo-link w-20 md:w-28 lg:block lg:w-full"
-                    src="./img/Logo fix.png"
-                    alt="Logo"
-                    />
-                </a>
-                </div>
-                <div class="flex items-center px-4 py-10">
-                    <button
-                        id="hamburger"
-                        name="hamburger"
-                        type="button"
-                        class="block absolute right-10 ham-link lg:hidden"
-                    >
-                        <span
-                        class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-                        ></span>
-                        <span
-                        class="hamburger-line transition duration-300 ease-in-out"
-                        ></span>
-                        <span
-                        class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-                        ></span>
-                    </button>
-                    <nav
-                    id="nav-menu"
-                    class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[150px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:pr-20 lg:shadow-none lg:rounded-none"
-                    >
-                        <ul class="font-philosopher block font-bold lg:flex">
-                        <li class="group">
-                            <a
-                            href="index.html"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >Home</a
-                            >
-                        </li>
-                        <li class="group">
-                            <a
-                            href="about.html"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >About</a
-                            >
-                        </li>
-                        <li class="group">
-                            <a
-                            href="menu.html"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >Menu</a
-                            >
-                        </li>
-                        <li class="group">
-                            <a
-                            href="#"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >Gallery</a
-                            >
-                        </li>
-                        <li class="group">
-                            <a
-                            href="faq.html"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >FAQs</a
-                            >
-                        </li>
-                        <li class="group">
-                            <a
-                            href="#"
-                            class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
-                            >Contact</a
-                            >
-                        </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-      <!-- Header end -->
-  
-      <!-- Hero section start-->
-      <section
-        id="home"
-        class="py-36 bg-[url('./img/header-kecil.jpg')] bg-center bg-cover flex items-center justify-center"
-      >
-        <div class="container">
-          <div class="flex flex-wrap">
-            <div class="w-full self-center text-center">
-              <h1
-                class="font-philosopher text-2xl text-white md:text-4xl lg:text-5xl"
+  <!-- Header start -->
+  <header
+  class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+>
+  <div class="container">
+    <div class="flex items-center justify-between relative">
+      <div class="px-10 lg:pl-20">
+        <a href="#menu">
+          <img
+            id="logo"
+            class="logo-link w-20 md:w-28 lg:block lg:w-full"
+            src="./img/Logo fix.png"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="flex items-center px-4 py-10">
+        <button
+          id="hamburger"
+          name="hamburger"
+          type="button"
+          class="block absolute right-10 ham-link lg:hidden"
+        >
+          <span
+            class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+          ></span>
+          <span
+            class="hamburger-line transition duration-300 ease-in-out"
+          ></span>
+          <span
+            class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+          ></span>
+        </button>
+        <nav
+          id="nav-menu"
+          class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[150px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:pr-20 lg:shadow-none lg:rounded-none"
+        >
+          <ul class="font-philosopher block font-bold lg:flex">
+            <li class="group">
+              <a
+                href="/public/home.html"
+                id="Home"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >Home</a
               >
-                Gallery
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Hero section end -->
+            </li>
+            <li class="group">
+              <a
+                href="/public/about.html"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >About</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="/public/menu.html"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >Menu</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="/public/gallery.html"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >Gallery</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="/public/faq.html"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >FAQs</a
+              >
+            </li>
+            <li class="group">
+              <a
+                href="#footer"
+                class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header end -->
 
-      <!-- Gallery section start -->
-      <div class="container-gallery relative h-screen pt-24">
-        <div class="image-container-gallery flex flex-wrap gap-[15px] justify-center p-10">
-          <div class="image h-[250px] width-[350px] overflow-hidden cursor-pointer">
-            <img class="h-full w-full object-cover ease-linear duration-200 hover:scale-110" src="./img/babi-guling-1.jpg" alt="">
-          </div>
-          <div class="image h-[250px] width-[350px] overflow-hidden cursor-pointer">
-            <img class="h-full w-full object-cover ease-linear duration-200 hover:scale-110" src="./img/daluman.jpe" alt="">
-          </div>
-          <div class="image h-[250px] width-[350px] overflow-hidden cursor-pointer">
-            <img class="h-full w-full object-cover ease-linear duration-200 hover:scale-110" src="./img/rujak.jpg" alt="">
-          </div>
-        </div>
+   <!-- Hero section start-->
+   <section
+   id="home"
+   class="py-36 bg-[url('./img/header-kecil.jpg')] bg-center bg-cover flex items-center justify-center"
+ >
+   <div class="container">
+     <div class="flex flex-wrap">
+       <div class="w-full self-center text-center">
+         <h1
+           class="font-philosopher text-2xl text-white md:text-4xl lg:text-5xl"
+         >
+           Menu
+         </h1>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- Hero section end -->
 
-        <!-- Pop-up -->
-        <div class="popup-image-gallery fixed top-0 left-0 bg-quaternary h-full w-full z-[100] hidden">
-          <span class="absolute top-0 right-10 text-4xl font-bold text-white cursor-pointer z-[100]">&times;</span>
-          <img class="absolute top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 w-[750px] object-cover" src="./img/babi-guling-1.jpg" alt="">
-        </div>
-        <div class="popup-image-gallery fixed top-0 left-0 bg-quaternary h-full w-full z-[100] hidden">
-            <span class="absolute top-0 right-10 text-4xl font-bold text-white cursor-pointer z-[100]">&times;</span>
-            <img class="absolute top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 w-[750px] object-cover" src="./img/daluman.jpe" alt="">
+<!-- Button menu start -->
+ <div class="w-full max-w-md mx-auto container py-24">
+  <div class="flex ">
+    <button onclick="openTab('tab1')" id="tabBtn1" class="w-1/3 py-2 px-4 font-philosopher font-bold text-center active-tab">Snack</button>
+    <button onclick="openTab('tab2')" id="tabBtn2" class="w-1/3 py-2 px-4 font-philosopher font-bold text-center">Main Course</button>
+    <button onclick="openTab('tab3')" id="tabBtn3" class="w-1/3 py-2 px-4 font-philosopher font-bold text-center">Drink</button>
+  </div>
+</div>
+<!-- Button menu end -->
+
+ <!-- Snack section start -->
+ <section id="tab1" class="tab-content  container pb-24">
+  <div class="flex flex-wrap lg:px-32">
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Rujak Kuah Pindang
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 12.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Fruits
+            </p>
           </div>
-        <div class="popup-image-gallery fixed top-0 left-0 bg-quaternary h-full w-full z-[100] hidden">
-        <span class="absolute top-0 right-10 text-4xl font-bold text-white cursor-pointer z-[100]">&times;</span>
-        <img class="absolute top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 w-[750px] object-cover" src="./img/rujak.jpg" alt="">
+        </div>
+        <div class="w-1/2">
+          <img class="mx-auto w-full" src="./img/rujak.jpg" alt="Rujak Kuah Pindang" />
         </div>
       </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Jaje Pisang Rai
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 15.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Tradiotional Banana Cake, Grated Coconut
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/Pisang rai menu.jpg" alt="Pisang Rai" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Jaje Klepon
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 10.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Traditional Cake filled with liquid brown sugar, Grated Coconut
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/klepon menu.jpg" alt="Pisang Rai" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Pie Susu
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 30.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Milk Pie
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/pie susu.jpeg" alt="Pie Susu" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Jaje Godoh
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 10.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Fried Banana Cake
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/godoh.jpeg" alt="Pie Susu" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Jaje Laklak
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 15.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Traditional cake, Brown Sugar Sauce, Grated Coconut
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/Laklak bali.jpg" alt="Pie Susu" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Jaje Uli Tape
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 20.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Sticky Rice Cake, Fermented Glutinous Rice 
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/jajan tapi uli.jpg" alt="Pie Susu" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!--Snack section end  -->
 
-      <!-- Gallery section end -->
+ <!-- Main course section start -->
+<section id="tab2" class="tab-content container pb-24 hidden">
+  <div class="flex flex-wrap lg:px-32">
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Babi Guling
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 25.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Rice, Pork, Pork Satay, Vegetables, Chili Sauce
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/babi-guling-1.jpg" alt="Babi Guling" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Ayam Betutu
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 35.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Rice, Chicken, Balinese Satay, Vegetables, Chili Sauce
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/nasi betutu.jpg" alt="Ayam Betutu" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Sate Lilit
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 23.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Rice, Balinese Satay, Chili Sauce
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/sate lilit.jpg" alt="Sate Lilit" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Lawar
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 18.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Chicken, Vegetables
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/lawar.jpg" alt="Lawar" />
+        </div>
+      </div>
+    </div> 
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Bebek Timbungan
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 75.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Rise, Duck, Vegetables, Chili Sauce
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/bebek timbungan.jpg" alt="Bebek Timbungan" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Blayag
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 15.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Vegetables, Egg, Chicken, Rice Cake, Peanuts
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/blayag.jpg" alt="Blayag" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Srombotan
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 12.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Include: Vegetables, Peanuts
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/srombotan.jpg" alt="Srombotan" />
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+ <!--Main course section end  -->
 
-      <script src="js/script.js"></script>
+ <!-- Drink section start -->
+<section id="tab3" class="tab-content  container pb-24 hidden">
+  <div class="flex flex-wrap lg:px-32">
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Air Mineral
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 7.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Mineral Water
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/air.png" alt="Air Mineral" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Kopi Bali
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 15.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Balinese Black Coffee
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/kopi.jpg" alt="Kopi Bali" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Es Kelapa Mudah
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 20.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Coconut Ice
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/es kelapa muda.jpg" alt="Es Kelapa Muda" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Es Daluman
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 12.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Daluman Ice (Grass jelly leaf extract with brown sugar and coconut milk)
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/daluman.jpe" alt="Es Daluman" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Loloh Cemcem
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 15.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Herbal drink
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/loloh.jpg" alt="Loloh Cemcem" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Es Gula
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 10.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Sugar Ice
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/es gula.webp" alt="Es Gula" />
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-5 md:w-1/2 pb-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-5 md:mb-8 lg:mb-3 flex items-center"> 
+        <div class="w-1/2"> 
+          <div class="py-3 text-left px-3">
+            <h1 class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base">
+              Arak Bali
+            </h1>
+            <h3 class="font-port-lligat-sans text-sm text-primary">
+              Price: IDR 150.000
+            </h3>
+            <p class="font-port-lligat-sans text-sm text-last">
+              Traditional Balinese Alcoholic Drinks
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2"> 
+          <img class="mx-auto w-full" src="./img/arak.jpg" alt="Arak Bali" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Drink section end -->
+
+<!-- Footer start -->
+<footer id="footer" class="w-full bg-primary">
+  <div class="container px-10 lg:px-32 py-12">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2 pb-10 mx-auto">
+        <div class="text-white">
+          <div class="pt-6 pb-4">
+            <h1 class="font-bold text-3xl lg:text-4xl">Talk with us</h1>
+          </div>
+          <div class="text-base md:text-lg lg:text-xl">
+            <p class="mb-2">Jln. Samratulangi No. 14, Singaraja, Buleleng, Bali</p>
+            <p class="mb-2">(+62) 81138700044</p>
+            <p class="mb-2">Pi7uBali@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 md:pl-24 lg:pl-24">
+        <div class="text-white">
+          <div class="pt-6 pb-4">
+            <h1 class="font-bold text-3xl lg:text-4xl">Keep Connected</h1>
+          </div>
+          <ul class="pb-6">
+            <li class="flex items-center mb-4">
+              <img src="./img/Vector-IG.png" alt="Instagram Logo" class="w-6 h-6 mr-2" />
+              <a href="#" class="text-white hover:text-gray-300">Instagram</a>
+            </li>
+            <li class="flex items-center mb-4">
+              <img src="./img/Vector-FB.png" alt="Facebook Logo" class="w-6 h-6 mr-2" />
+              <a href="#" class="text-white hover:text-gray-300">Facebook</a>
+            </li>
+            <li class="flex items-center mb-4">
+              <img src="./img/Vector-TWT.png" alt="Twitter Logo" class="w-6 h-6 mr-2" />
+              <a href="#" class="text-white hover:text-gray-300">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> 
+<!-- Footer end -->
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>

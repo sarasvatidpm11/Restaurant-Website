@@ -1,65 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-#FFF9F9">
-    <!-- Navbar -->
-    <nav class= "container w-10/12 flex flex-row mx-auto z-10 ">
-        <div class="basis-1/4 my-5">
-            <a href="#">
-                <img src="./img/Logo fix.png" alt="Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-10 lg:pl-20">
+            <a href="#about">
+              <img
+                id="logo"
+                class="logo-link w-20 md:w-28 lg:block lg:w-full"
+                src="./img/Logo fix.png"
+                alt="Logo"
+              />
             </a>
+          </div>
+          <div class="flex items-center px-4 py-10">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-10 ham-link lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[150px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:pr-20 lg:shadow-none lg:rounded-none"
+            >
+              <ul class="font-philosopher block font-bold lg:flex">
+                <li class="group">
+                  <a
+                    href="/public/home.html"
+                    id="Home"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="/public/about.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="/public/menu.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Menu</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="/public/gallery.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="/public/faq.html"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#"
+                    class="text-base text-quaternary py-2 mx-8 flex group-hover:text-primary lg:text-white nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="basis-3/4 flex items-center justify-evenly font-port-lligat-sans text-white">
-            <a href="#">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Gallery</a>
-            <a href="#">FAQs</a>
-            <a href="#">Contact</a>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero section start-->
+    <section
+      id="home"
+      class="py-36 bg-[url('./img/header.jpg')] bg-center bg-cover lg:h-screen flex items-center justify-center"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center text-center">
+            <h1
+              class="font-philosopher text-lg text-white md:text-4xl lg:text-5xl"
+            >
+              Welcome to
+            </h1>
+            <h1
+              class="font-philosopher text-xl text-white md:text-5xl lg:text-6xl"
+            >
+              TYPICAL BALI TESTE
+            </h1>
+            <h1
+              class="font-port-lligat-sans text-sm md:text-lg lg:text-xl text-white"
+            >
+              -Taste the flavor, love every bite-
+            </h1>
+          </div>
         </div>
-    </nav>
-    <!-- Header -->
-    <header class="container max-h-screen bg-[url('./img/header.jpg')] bg-center bg-cover z-0 -mt-[113px]">
-        <div class="h-screen flex items-center justify-center">
-            <div>
-                <h1 class="font-philosopher text-4xl text-white text-center">Welcome to</h1>
-                <h1 class="font-philosopher text-5xl text-white text-center">TYPICAL BALI TESTE</h1>
-                <h1 class="font-port-lligat-sans text-xl text-white text-center">-Taste the flavor, love every bite-</h1>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start-->
+    <section id="about" class="py-20 md:py-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full px-10 mb-5 text-center lg:w-1/2 lg:pl-32 lg:my-auto"
+          >
+            <h1
+              class="font-philosopher font-bold text-xl text-quaternary md:text-3xl lg:text-left lg:text-4xl"
+            >
+              About Us
+            </h1>
+            <div
+              class="mx-auto flex justify-center items-center lg:justify-start"
+            >
+              <img
+                class="w-24 mb-5 md:w-44 lg:w-44"
+                src="./img/Rectangle 1.png"
+                alt="Line"
+              />
             </div>
+            <p
+              class="font-port-lligat-sans text-sm mb-6 text-quaternary text-justify md:mb-5 md:text-xl lg:text-xl"
+            >
+            In December 2023, the Pi7u Bali Restaurant culinary business opened with great love for Balinese culinary culture. 
+            With the vision of becoming the main destination that presents an authentic Balinese experience through distinctive flavors and cultural beauty 
+            in every dish we serve at Pi7u Bali Restaurant. 
+            Pi7u Bali Restaurant is located on Jln. Samratulangi No.14, Singaraja, Buleleng, Bali. Open from 
+            <span class="font-port-lligat-sans font-bold">
+              09.00 WITA - 22.00 WITA.
+            </span>
+            </p>
+            <a
+              class="font-philosopher text-sm font-semibold text-white bg-primary p-2 hover:shadow-lg hover:opacity-80 transition-duration-300 md:text-lg lg:text-xl lg:float-left"
+              href="about.html"
+              >Read more</a
+            >
+          </div>
+          <div class="w-full px-10 lg:w-1/2 lg:pr-32">
+            <img
+              class="my-5 mx-auto border-t-[25px] border-b-[25px] border-x-[25px] shadow-2xl border-white md:border-t-[35px] md:border-b-[35px] md:border-x-[35px] lg:border-t-[20px] lg:border-b-[65px] lg:border-x-[20px] lg:rotate-12 lg:w-64"
+              src="./img/restaurant.jpg"
+              alt="Restaurant"
+            />
+            <img
+              class="mx-auto border-t-[25px] border-b-[25px] border-x-[25px] shadow-2xl border-white md:border-t-[35px] md:border-b-[35px] md:border-x-[35px] lg:border-t-[20px] lg:border-b-[65px] lg:border-x-[20px] lg:-rotate-45 lg:-mt-20 lg:w-64"
+              src="./img/betutu.jpeg"
+              alt="Ayam Betutu"
+            />
+          </div>
         </div>
-            
-     </header>
-    
-    <!-- Main Content -->
-    <main>
-        <div>
-            <div>
+      </div>
+    </section>
+    <!-- About section end -->
 
+    <!-- Autentic menu section start -->
+    <section id="autentic" class="pb-20 md:pb-32">
+      <div class="container lg:px-30">
+        <div class="w-full px-10 mb-3 text-center lg:px-32">
+          <h1
+            class="font-philosopher font-bold text-xl text-quaternary md:text-3xl lg:text-4xl"
+          >
+            Authentic Menu's
+          </h1>
+          <div class="mx-auto flex justify-center items-center">
+            <img
+              class="w-44 mb-5 md:w-64 md:h-1.5 lg:w-80 lg:h-1 lg:mb-0"
+              src="./img/Rectangle 1.png"
+              alt="Line"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap lg:px-32">
+          <div class="w-full px-10 lg:w-1/3">
+            <div class="bg-transparent overflow-hidden mb-5">
+              <img
+                class="mx-auto w-full md:w-3/4 lg:w-full lg:mt-10"
+                src="./img/babi-guling-1.jpg"
+                alt="Babi Guling"
+              />
+              <div class="py-3 text-center md:px-32 lg:px-0">
+                <h1
+                  class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base"
+                >
+                  Babi Guling
+                </h1>
+                <p
+                  class="font-port-lligat-sans text-sm text-quaternary md:text-lg lg:text-sm"
+                >
+                  Pork roasted over a fire for hours is served with additional
+                  condiments full of Balinese spices.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="w-full px-10 lg:w-1/3">
+            <div class="bg-transparent overflow-hidden mb-5">
+              <img
+                class="mx-auto w-full md:w-3/4 lg:w-full lg:mt-10"
+                src="./img/daluman.jpe"
+                alt=" Es Daluman"
+              />
+              <div class="py-3 text-center md:px-32 lg:px-0">
+                <h1
+                  class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base"
+                >
+                  Es Daluman
+                </h1>
+                <p
+                  class="font-port-lligat-sans text-sm text-quaternary md:text-lg lg:text-sm"
+                >
+                  Fresh and natural drink from leaf extract served with sugar
+                  and coconut milk.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-10 lg:w-1/3">
+            <div class="bg-transparent overflow-hidden">
+              <img
+                class="mx-auto w-full md:w-3/4 lg:w-full lg:mt-10"
+                src="./img/rujak.jpg"
+                alt="Rujak Kuah Pindang"
+              />
+              <div class="py-3 text-center md:px-32 lg:px-0">
+                <h1
+                  class="font-philosopher font-bold text-base text-quaternary md:text-2xl lg:text-base"
+                >
+                  Rujak Kuah Pindang
+                </h1>
+                <p
+                  class="font-port-lligat-sans text-sm text-quaternary md:text-lg lg:text-sm"
+                >
+                  Balinese Rujak from fish sauce combined with fresh fruit.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
+    <!-- Autentic menu section end -->
 
-    <!-- Footer -->
-    <footer>
+    <!-- Menu section start -->
+    <section id="menu">
+      <div class="container">
+        <div class="w-full bg-secondary absolute py-40 md:py-44 px-10"></div>
+        <div class="flex flex-wrap">
+          <div class="hidden lg:block lg:absolute lg:w-1/2 lg:-mt-20 lg:pl-20">
+            <img src="./img/Book 2.png" alt="" />
+          </div>
+          <div
+            class="w-full text-center absolute py-16 lg:w-1/2 lg:relative lg:text-justify lg:justify-start lg:ml-auto lg:pr-20"
+          >
+            <h1
+              class="font-philosopher font-bold text-xl text-white md:text-3xl lg:text-4xl"
+            >
+              Menu's
+            </h1>
+            <div
+              class="mx-auto flex justify-center items-center lg:justify-start"
+            >
+              <img
+                class="w-24 h-0.5 mb-5 md:w-64 md:h-1.5 lg:w-36 lg:h-1 lg:mb-0"
+                src="./img/Rectangle kuning.png"
+                alt="Line"
+              />
+            </div>
+            <p
+              class="px-10 mb-6 font-port-lligat-sans text-sm text-white md:px-32 md:text-xl lg:px-0 lg:mt-5 lg:justify-start"
+            >
+            A variety of typical Balinese menus are available at Pi7u Bali Restaurant with attractive and unforgettable taste sensations.
+            </p>
+            <a
+              class="font-philosopher text-sm font-semibold text-white bg-tertiary p-2 hover:shadow-lg hover:opacity-80 transition-duration-300 md:text-lg lg:text-xl lg:float-left lg:text-center"
+              href="menu.html"
+              >See more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section end -->
 
-    </footer>
+    <!-- Gallery section start -->
+    <section id="gallery" class="py-40 bg-transparent relative">
+      <div class="container px-60">
+        <div class="w-full px-10 mb-3 text-center lg:px-32">
+          <h1
+            class="font-philosopher font-bold text-xl text-quaternary md:text-3xl lg:text-4xl"
+          >
+            Gallery
+          </h1>
+          <div class="mx-auto flex justify-center items-center">
+            <img
+              class="w-44 mb-5 md:w-64 md:h-1.5 lg:w-40 lg:h-1 lg:mb-0"
+              src="./img/Rectangle 1.png"
+              alt="Line"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- Container Slider -->
+          <div class="container-slider mx-auto w-1/2 overflow-hidden">
+            <div class="wrapper flex">
+              <!-- Gambar-gambar slider di sini -->
+              <img class="w-full" src="./img/srombotan.jpg" alt="Image 1">
+              <img class="w-full" src="./img/bebek timbungan.jpg" alt="Image 2">
+              <img class="w-full" src="./img/lawar.jpg" alt="Image 3">
+              <img class="w-full" src="./img/pie susu.jpeg" alt="Image 4">
+            </div>
+          </div>
+          <div class="container-slider mx-auto w-1/2 overflow-hidden">
+            <div class="wrapper flex">
+              <!-- Gambar-gambar slider di sini -->
+              <img class="w-full" src="./img/srombotan.jpg" alt="Image 1">
+              <img class="w-full" src="./img/bebek timbungan.jpg" alt="Image 2">
+              <img class="w-full" src="./img/lawar.jpg" alt="Image 3">
+              <img class="w-full" src="./img/pie susu.jpeg" alt="Image 4">
+            </div>
+          </div>
+        </div>
+          <!-- Akhir Container Slider -->
+      </div>
+    </section>
+    <!-- Gallery section end -->
+
+
+    <!-- Footer start -->
+    <footer id="footer" class="w-full bg-primary">
+      <div class="container px-10 lg:px-32 py-12">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 pb-10 mx-auto">
+            <div class="text-white">
+              <div class="pt-6 pb-4">
+                <h1 class="font-bold text-3xl lg:text-4xl">Talk with us</h1>
+              </div>
+              <div class="text-base md:text-lg lg:text-xl">
+                <p class="mb-2">Jln. Samratulangi No. 14, Singaraja, Buleleng, Bali</p>
+                <p class="mb-2">(+62) 81138700044</p>
+                <p class="mb-2">Pi7uBali@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 md:pl-24 lg:pl-24">
+            <div class="text-white">
+              <div class="pt-6 pb-4">
+                <h1 class="font-bold text-3xl lg:text-4xl">Keep Connected</h1>
+              </div>
+              <ul class="pb-6">
+                <li class="flex items-center mb-4">
+                  <img src="./img/Vector-IG.png" alt="Instagram Logo" class="w-6 h-6 mr-2" />
+                  <a href="#" class="text-white hover:text-gray-300">Instagram</a>
+                </li>
+                <li class="flex items-center mb-4">
+                  <img src="./img/Vector-FB.png" alt="Facebook Logo" class="w-6 h-6 mr-2" />
+                  <a href="#" class="text-white hover:text-gray-300">Facebook</a>
+                </li>
+                <li class="flex items-center mb-4">
+                  <img src="./img/Vector-TWT.png" alt="Twitter Logo" class="w-6 h-6 mr-2" />
+                  <a href="#" class="text-white hover:text-gray-300">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <!-- Footer end -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
-<!-- <div class="container min-h-screen bg-[url('./img/header.jpg')] bg-center bg-cover">
-    <nav class="flex items-center">
-        <img src="./img/Logo fix.png" alt="Logo">
-        <ul class="font-philosopher text-white">
-            <li class="list-none inline-block"><a href="#">Home</a></li>
-            <li class="list-none inline-block"><a href="#">About</a></li>
-            <li class="list-none inline-block"><a href="#">Menu</a></li>
-            <li class="list-none inline-block"><a href="#">Gallery</a></li>
-            <li class="list-none inline-block"><a href="#">FAQs</a></li>
-            <li class="list-none inline-block"><a href="#">Contact</a></li>
-
-        </ul>
-    </nav> -->
